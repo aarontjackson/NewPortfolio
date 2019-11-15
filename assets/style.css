@@ -12,3 +12,7 @@
 .wave {
     background-image: url(./img/wave.png);
 } 
+
+.cards {
+    padding: 0, 0, 0, 24px;
+}
