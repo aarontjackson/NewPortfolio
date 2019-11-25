@@ -33,11 +33,11 @@ h1 .header-title {
     padding: 0, 0, 0, 24px;
 }
 
-/* #skill {
+#skill {
     position: relative;
-    bottom: 80px;
+    top: 80px;
     z-index: 4;
-} */
+}
 
 /* .fa-code {
     

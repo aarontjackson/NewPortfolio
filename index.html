@@ -19,13 +19,85 @@
 <body>
 
     <!-- navbar  -->
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="https://bulma.io">
-                <img src="https://bulma.io/images/bulma-logo.png"
-                    alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="112" height="28">
-            </a>
+    <nav class="navbar is-transparent">
+            <div class="navbar-brand">
+              <!-- <a class="navbar-item" href="https://bulma.io">
+                <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+              </a> -->
+              <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          
+            <div id="navbarExampleTransparentExample" class="navbar-menu">
+              <div class="navbar-start">
+                <a class="navbar-item" href="#">
+                  Home
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link" href="#">
+                    Docs
+                  </a>
+                  <div class="navbar-dropdown is-boxed">
+                    <a class="navbar-item" href="#about-me">
+                      Overview
+                    </a>
+                    <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                      Modifiers
+                    </a>
+                    <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+                      Columns
+                    </a>
+                    <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+                      Layout
+                    </a>
+                    <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+                      Form
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+                      Elements
+                    </a>
+                    <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+                      Components
+                    </a>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="navbar-end">
+                <div class="navbar-item">
+                  <div class="field is-grouped">
+                    <p class="control">
+                      <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="https://bulma.io" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                        <span class="icon">
+                          <i class="fab fa-twitter"></i>
+                        </span>
+                        <span>
+                          Tweet
+                        </span>
+                      </a>
+                    </p>
+                    <p class="control">
+                      <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.8.0/bulma-0.8.0.zip">
+                        <span class="icon">
+                          <i class="fas fa-download"></i>
+                        </span>
+                        <span>Download</span>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
 
+
+    <!-- <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+           
             <a role="button" class="navbar-burger" data-target="#navMenu" aria-label="menu" aria-expanded="false">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -37,7 +109,7 @@
             <div class="navbar-end"></div>
         </div>
 
-    </nav>
+    </nav> -->
     <!-- / navbar -->
 
     <!-- ===================  page header area=================================-->
@@ -52,7 +124,7 @@
     <!-- / hero -->
 
     <!-- section -->
-    <section class="section is-medium has-text-centered has-background-primary">
+    <section class="section has-text-centered has-background-primary" id="about-me">
         <div class="container">
             <div class="columns is-centered">
                 <div class="column is-10 has-text-centered">
@@ -67,17 +139,11 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!-- / section -->
-
-    <!-- =================== skills area =================================-->
-    <!-- section -->
-    <section class="section is-paddingless has-background-light">
         <div class="container is-narrow" id="skill">
-            <div class="columns is-1 is-centered">
+            <div class="columns is-variable is-0 is-centered">
                 <div class="column is-half">
                     <article class="media notification is-info box">
-                        <div class="media-content has-text-centered" style="height:336px;">
+                        <div class="media-content has-text-centered">
                             <div class="content">
                                 <h1 class="title is-size-4">
                                     <span class="icon is-medium">
@@ -131,12 +197,11 @@
                                     Motivator:
                                     Challanges can truly be difficult and maintaining a high morale can lead to success.
                                 </p>
-                                <p>
+                                <!-- <p>
                                     Communicator:
                                     Thoroughly listening to idividual's is vitual. I take pride in providing thoughtful
-                                    feedback
-                                    to reach deliverables.
-                                </p>
+                                    feedback to reach deliverables.
+                                </p> -->
                             </div>
                         </div>
                     </article>
@@ -146,9 +211,12 @@
     </section>
     <!-- / section -->
 
+    <!-- =================== skills area =================================-->
+  
+
     <!-- =================== projects area =================================-->
     <!-- section -->
-    <section class="section has-background-light">
+    <section class="section is-medium has-background-light">
         <div class="container">
             <div></div>
             <h1 class="center">Check out my recent projects</h1>
@@ -390,11 +458,23 @@
     <!-- footer -->
     <footer class="footer">
         <div class="content has-text-centered">
-            <p>
-                <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-            </p>
+            <h5>Aaron Jackson</h5>
+            <ul class="is-centered is-large">
+                <!-- LinkedIn -->
+                <a class="p-2 fa-lg fb-ic" href="https://www.linkedin.com/in/aaron-jackson-481a2052/" target="_blank">
+                    <i class="fab fa-linkedin white-text"> </i>
+                </a>
+                <!-- Github -->
+                <a class="p-2 fa-lg ins-ic" href="https://github.com/aarontjackson" target="_blank">
+                    <i class="fab fa-github white-text"> </i>
+                </a>
+                <!-- Email -->
+                <a class="p-2 fa-lg ins-ic"
+                    href="mailto:aarontjackson@outlook.com?subject=I%20want%20to%20Invest%20in%20%22Name-it!%22&body=Hi%20Aaron%2C%0A%0AI%20am%20very%20interested%20investing%20in%20%22Name-it!%22.%20Please%20contact%20me%20at%3A%0A">
+
+                    <i class="far fa-envelope"> </i>
+                </a>
+            </ul>
         </div>
     </footer>
     <!-- / footer -->
