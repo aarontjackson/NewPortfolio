@@ -5,9 +5,25 @@
     padding: 60px, 0, 0, 0;
 }
 
+.text-center {
+    text-align: center;
+    padding: 60px, 0, 0, 0;
+}
+
+h1 .header-title {
+    font: 60px;
+}
 /* .hero-background {
     background-color: green;
 } */
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100vh;
+    height: 100vh; 
+    border: 1px solid black;
+}
 
 .wave {
     background-image: url(./img/wave.png);
@@ -17,12 +33,11 @@
     padding: 0, 0, 0, 24px;
 }
 
-#skill {
+/* #skill {
     position: relative;
     bottom: 80px;
     z-index: 4;
-
-}
+} */
 
 /* .fa-code {
     
