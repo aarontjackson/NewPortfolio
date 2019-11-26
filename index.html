@@ -31,37 +31,27 @@
             </div>
         </div>
 
-        <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div id="navbarExampleTransparentExample" class="navbar-menu is-active">
             <div class="navbar-start">
-                <a class="navbar-item" href="#">
+                <!-- <a class="navbar-item" href="#">
                     Home
-                </a>
-                <div class="navbar-item has-dropdown is-hoverable">
+                </a> -->
+                <div class="navbar-item is-primary has-dropdown is-hoverable">
                     <a class="navbar-link" href="#">
-                        Docs
+                        Home
                     </a>
                     <div class="navbar-dropdown is-boxed">
                         <a class="navbar-item" href="#about-me">
-                            Overview
+                            About Me
                         </a>
-                        <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
-                            Modifiers
+                        <a class="navbar-item" href="#skill">
+                            Skills
                         </a>
-                        <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
-                            Columns
+                        <a class="navbar-item" href="#projects">
+                            Projects
                         </a>
-                        <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
-                            Layout
-                        </a>
-                        <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
-                            Form
-                        </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
-                            Elements
-                        </a>
-                        <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
-                            Components
+                        <a class="navbar-item" href="#contact-form">
+                            Contact Me
                         </a>
                     </div>
                 </div>
@@ -70,18 +60,51 @@
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="field is-grouped">
+                        <!-- LinkedIn button -->
                         <p class="control">
-                            <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet"
+                            <a class="bd-button button is-primary" data-social-network="LinkedIn" data-social-action="LinkedIn"
                                 data-social-target="https://bulma.io" target="_blank"
-                                href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                                href="https://www.linkedin.com/in/aaron-jackson-481a2052/">
                                 <span class="icon">
-                                    <i class="fab fa-twitter"></i>
+                                    <i class="fab fa-linkedin white-text"></i>
                                 </span>
                                 <span>
-                                    Tweet
+                                    LinkedIn
                                 </span>
                             </a>
                         </p>
+                        <!-- / LinkedIn button -->
+
+                        <!-- GitHub button -->
+                        <p class="control">
+                            <a class="bd-button button is-primary" data-social-network="GitHub" data-social-action="GitHub"
+                                data-social-target="https://bulma.io" target="_blank"
+                                href="https://github.com/aarontjackson">
+                                <span class="icon">
+                                    <i class="fab fa-github white-text"></i>
+                                </span>
+                                <span>
+                                    GitHub
+                                </span>
+                            </a>
+                        </p>
+                        <!-- / GitHub button -->
+
+                        <!-- Email button -->
+                        <p class="control">
+                            <a class="bd-button button is-primary" data-social-network="Email" data-social-action="GitHub"
+                                data-social-target="https://bulma.io" target="_blank"
+                                href="mailto:aarontjackson89@gmail.com?subject=Aaron%20Jackson%20Dev%20&body=Hi%20Aaron%2C%0A%0AI%20am%20very%20interested%20in%20connecting%20with%20you.%20Please%20contact%20me%20at%3A%0A">
+                                <span class="icon">
+                                    <i class="far fa-envelope"></i>
+                                </span>
+                                <span>
+                                    Email
+                                </span>
+                            </a>
+                        </p>
+                        <!-- / Email button -->
+
                         <p class="control">
                             <a class="button is-primary"
                                 href="https://github.com/jgthms/bulma/releases/download/0.8.0/bulma-0.8.0.zip">
@@ -100,7 +123,7 @@
 
     <!-- ===================  page header area =================================-->
     <!-- hero -->
-    <section class="hero is-fullheight has-background-black">
+    <section class="hero is-fullheight has-background-black" id="header">
         <header class="hero-body has-text-white">
             <div class="container">
                 <div class="is-overlay center">
@@ -205,7 +228,7 @@
     </section>
     <!-- =================== projects area =================================-->
     <!-- section -->
-    <section class="section has-background-light">
+    <section class="section has-background-light" id="projects">
         <div class="container">
             <div></div>
             <h1 class="center">Check out my recent projects</h1>
@@ -387,7 +410,7 @@
     <!-- =================== contact me area =================================-->
 
     <!-- section -->
-    <section class="has-text-centered">
+    <section class="has-text-centered" id="contact-form">
         <div class="container">
             <div class="columns">
                 <div class="column">
@@ -456,13 +479,13 @@
                 </a>
                 <!-- Github -->
                 <a class="p-2 fa-lg ins-ic" href="https://github.com/aarontjackson" target="_blank">
-                    <i class="fab fa-github white-text"> </i>
+                    <i class="fab fa-github white-text"></i>
                 </a>
                 <!-- Email -->
                 <a class="p-2 fa-lg ins-ic"
                     href="mailto:aarontjackson@outlook.com?subject=I%20want%20to%20Invest%20in%20%22Name-it!%22&body=Hi%20Aaron%2C%0A%0AI%20am%20very%20interested%20investing%20in%20%22Name-it!%22.%20Please%20contact%20me%20at%3A%0A">
 
-                    <i class="far fa-envelope"> </i>
+                    <i class="far fa-envelope"></i>
                 </a>
             </ul>
         </div>
