@@ -1,0 +1,27 @@
+{
+  "name": "newportfolio",
+  "version": "1.0.0",
+  "description": "Aaron Jackson portfolio",
+  "main": "index.js",
+  "dependencies": {
+    "bulma": "^0.8.0",
+    "express": "^4.17.1",
+    "node": "^13.1.0",
+    "sequelize": "^5.21.2",
+    "sequelize-cli": "^5.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aarontjackson/NewPortfolio.git"
+  },
+  "author": "Aaron Jackson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aarontjackson/NewPortfolio/issues"
+  },
+  "homepage": "https://github.com/aarontjackson/NewPortfolio#readme"
+}
