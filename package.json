@@ -2,12 +2,13 @@
   "name": "newportfolio",
   "version": "1.0.0",
   "description": "Aaron Jackson portfolio",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
     "bulma": "^0.8.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mysql": "^2.17.1",
+    "mysql2": "^2.0.1",
     "node": "^13.1.0",
     "sequelize": "^5.21.2",
     "sequelize-cli": "^5.5.1"
