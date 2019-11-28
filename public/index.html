@@ -12,7 +12,7 @@
     <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
     <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
     <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="/style/style.css">
     <!-- <link rel="stylesheet" href="styles/debug.css"> -->
 </head>
 
@@ -62,8 +62,8 @@
                     <div class="field is-grouped">
                         <!-- LinkedIn button -->
                         <p class="control">
-                            <a class="bd-button button is-primary" data-social-network="LinkedIn" data-social-action="LinkedIn"
-                                data-social-target="https://bulma.io" target="_blank"
+                            <a class="bd-button button is-primary" data-social-network="LinkedIn"
+                                data-social-action="LinkedIn" data-social-target="https://bulma.io" target="_blank"
                                 href="https://www.linkedin.com/in/aaron-jackson-481a2052/">
                                 <span class="icon">
                                     <i class="fab fa-linkedin white-text"></i>
@@ -77,8 +77,8 @@
 
                         <!-- GitHub button -->
                         <p class="control">
-                            <a class="bd-button button is-primary" data-social-network="GitHub" data-social-action="GitHub"
-                                data-social-target="https://bulma.io" target="_blank"
+                            <a class="bd-button button is-primary" data-social-network="GitHub"
+                                data-social-action="GitHub" data-social-target="https://bulma.io" target="_blank"
                                 href="https://github.com/aarontjackson">
                                 <span class="icon">
                                     <i class="fab fa-github white-text"></i>
@@ -92,8 +92,8 @@
 
                         <!-- Email button -->
                         <p class="control">
-                            <a class="bd-button button is-primary" data-social-network="Email" data-social-action="GitHub"
-                                data-social-target="https://bulma.io" target="_blank"
+                            <a class="bd-button button is-primary" data-social-network="Email"
+                                data-social-action="GitHub" data-social-target="https://bulma.io" target="_blank"
                                 href="mailto:aarontjackson89@gmail.com?subject=Aaron%20Jackson%20Dev%20&body=Hi%20Aaron%2C%0A%0AI%20am%20very%20interested%20in%20connecting%20with%20you.%20Please%20contact%20me%20at%3A%0A">
                                 <span class="icon">
                                     <i class="far fa-envelope"></i>
@@ -428,7 +428,7 @@
         <div class="container">
             <div class="columns">
                 <div class="column">
-                    <form action="" accept-charset="UTF-8" method="post">
+                    <form id="contact-form" action="" accept-charset="UTF-8" method="post">
                         <div class="field">
                             <label class="label">Name</label>
                             <div class="control">
@@ -439,7 +439,8 @@
                         <div class="field">
                             <label class="label">Email</label>
                             <div class="control has-icons-left has-icons-right">
-                                <input class="input" type="email" id="email" placeholder="YourEmail@Provider.com" required>
+                                <input class="input" type="email" id="email" placeholder="YourEmail@Provider.com"
+                                    required>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-envelope"></i>
                                 </span>
@@ -458,10 +459,13 @@
                         </div>
                         <div class="field is-grouped">
                             <div class="control">
-                                <button class="button is-link" id="contact-submit">Submit</button>
+                                <button class="button is-link" type="submit" id="contact-submit">Submit</button>
                             </div>
                         </div>
                     </form>
+                    <div class="content">
+                        <p id="log"></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -493,6 +497,7 @@
     <!-- / footer -->
 
     <!-- ====================== script tags ==============================-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./assets/js/index.js"></script>
 </body>
 

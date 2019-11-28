@@ -22,4 +22,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-});
+  // contact form submission
+  $('#contact-submit').on('click', function(event) {
+
+    event.preventDefault();
+
+    let newContact = {
+      name: $('#name').val().trim(),
+      email: $('#email').val().trim(),
+      comment: $('#comment').val().trim()
+    };
+
+    $.post("/api/contact", newContact)
+
+      .then(function () {
+
+        $('#log').text('Message sent!');
+        $('#name').val("");
+        $('#email').val("");
+        $('#comment').val("");
+      });
+
+    });
+
+  });
+
