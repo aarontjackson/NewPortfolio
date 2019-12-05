@@ -1,6 +1,19 @@
 require("dotenv").config();
 const express = require("express");
 const db = require("./models");
+// const knex = require("knex")({
+//     client: 'mysql2',
+//     connection: {
+//         host: '127.0.0.1',
+//         user: 'Aaron Jackson',
+//         password: 'rootroot',
+//         database: 'contact'
+//     }
+// });
+
+// knex.select('*').from('contacts').then(data => {
+//     console.log(data);
+// });
 
 const app = express();
 let PORT = process.env.PORT || 3000;
@@ -11,8 +24,8 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // Routes
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+require("./routes/apiRoutes.js")(app);
+require("./routes/htmlRoutes.js")(app);
 
 const syncOptions = { force: false };
 

@@ -21,9 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+});
 
   // contact form submission
-  $('#contact-submit').on('click', function(event) {
+  $('#contact-submit').on('click', function (event) {
 
     event.preventDefault();
 
@@ -33,17 +34,20 @@ document.addEventListener('DOMContentLoaded', () => {
       comment: $('#comment').val().trim()
     };
 
+    console.log(newContact);
+
     $.post("/api/contact", newContact)
 
       .then(function () {
-
-        $('#log').text('Message sent!');
-        $('#name').val("");
-        $('#email').val("");
-        $('#comment').val("");
+        let row = $("<div>");
+        row.addClass("contact");
+        row.append("<p>" + newContact.name + "</p>");
+        row.append("<p>" + newContact.email + "</p>");
+        row.append("<p>" + newContact.comment + "</p>");
       });
-
-    });
-
   });
 
+  $('#log').text('Message sent!');
+  $('#name').val("");
+  $('#email').val("");
+  $('#comment').val("");
