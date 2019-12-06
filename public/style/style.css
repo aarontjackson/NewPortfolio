@@ -126,6 +126,10 @@ h1 .header-title {
     padding: 125px 0 50px 0;
 }
 
+#project-top-padding {
+    padding-top: 45px;
+}
+
 /* .fa-code {
     
 }
