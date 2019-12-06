@@ -87,6 +87,9 @@ h1 .header-title {
     background-color: #3500d3;
 }
 
+#font-splash {
+    color: #3500d3;
+}
 
 
 @media all and (min-width: 877px) and (max-width: 1024px) { 
@@ -114,6 +117,14 @@ h1 .header-title {
 #welcome-header {
     bottom: 100px;
 }  
+
+#top-padding {
+    padding-top: 125px;
+}
+
+#project-padding {
+    padding: 125px 0 50px 0;
+}
 
 /* .fa-code {
     
