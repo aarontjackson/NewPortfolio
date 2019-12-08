@@ -130,6 +130,38 @@ h1 .header-title {
     padding-top: 45px;
 }
 
+#fade {
+    z-index: 1;
+}
+
+#fade:hover {
+    opacity: 0.09;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 2px 0px;
+    color: #fff;
+    background: #000000;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+} 
+
+
+.fade-link {
+    display: show;
+    position: relative;
+    bottom: 100px;
+    opacity: 1;
+    color: black;
+}
+
+
+
 /* .fa-code {
     
 }
