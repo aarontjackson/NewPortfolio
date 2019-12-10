@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+a {
+    color: currentColor;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .center {
     display: flex;
     justify-content: center;
@@ -20,6 +26,22 @@ h1 .header-title {
 /* .hero-background {
     background-color: green;
 } */
+
+.wallpaper {
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.wallpaper {
+    background-image: url(../img/cover.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.2;
+    position: absolute;
+}
 
 .wrapper {
     position: relative;
@@ -43,6 +65,11 @@ h1 .header-title {
 
 .navbar {
     background-color: #3500d3;  
+}
+
+#navbarMenuHeroB {
+    position: relative;
+    top: 20%;
 }
 
 #column-padding {
