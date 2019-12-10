@@ -24,97 +24,57 @@
     <section class="hero is-fullheight" id="header">
         <div class="wallpaper is-fullheight"></div>
         <div class="hero-head">
-            <!-- navbar  -->
-            <nav class="navbar">
-                <div class="navbar-brand">
-                    <!-- <a class="navbar-item" href="https://bulma.io">
-                <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
-              </a> -->
-                    <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
 
-                <!-- <div id="navbarExampleTransparentExample" class="navbar-menu is-active"> -->
-                <div class="navbar-start">
-                    <!-- <a class="navbar-item" href="#">
-                    Home
-                </a> -->
-                    <div class="navbar-item has-dropdown">
-                        <a class="navbar-link" href="#">
-                            Home
-                        </a>
-                        <div class="navbar-dropdown is-boxed">
-                            <a class="navbar-item" href="#about-me">
-                                About Me
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="field is-grouped">
+                        <!-- LinkedIn button -->
+                        <p class="control">
+                            <a class="bd-button button has-text-white" id="header-button" data-social-network="LinkedIn"
+                                data-social-action="LinkedIn" data-social-target="https://bulma.io" target="_blank"
+                                href="https://www.linkedin.com/in/aaron-jackson-481a2052/">
+                                <span class="icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </span>
+                                <span>
+                                    LinkedIn
+                                </span>
                             </a>
-                            <a class="navbar-item" href="#skill">
-                                Skills
+                        </p>
+                        <!-- / LinkedIn button -->
+
+                        <!-- GitHub button -->
+                        <p class="control">
+                            <a class="bd-button button has-text-white" id="section-color" data-social-network="GitHub"
+                                data-social-action="GitHub" data-social-target="https://bulma.io" target="_blank"
+                                href="https://github.com/aarontjackson">
+                                <span class="icon">
+                                    <i class="fab fa-github white-text"></i>
+                                </span>
+                                <span>
+                                    GitHub
+                                </span>
                             </a>
-                            <a class="navbar-item" href="#projects">
-                                Projects
+                        </p>
+                        <!-- / GitHub button -->
+
+                        <!-- Email button -->
+                        <p class="control">
+                            <a class="bd-button button has-text-white" id="section-color" data-social-network="Email"
+                                data-social-action="GitHub" data-social-target="https://bulma.io" target="_blank"
+                                href="mailto:aarontjackson89@gmail.com?subject=Aaron%20Jackson%20Dev%20&body=Hi%20Aaron%2C%0A%0AI%20am%20very%20interested%20in%20connecting%20with%20you.%20Please%20contact%20me%20at%3A%0A">
+                                <span class="icon">
+                                    <i class="far fa-envelope"></i>
+                                </span>
+                                <span>
+                                    Email
+                                </span>
                             </a>
-                            <a class="navbar-item" href="#contact-form">
-                                Contact Me
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                        </p>
+                        <!-- / Email button -->
 
-                <div class="navbar-end">
-                    <div class="navbar-item">
-                        <div class="field is-grouped">
-                            <!-- LinkedIn button -->
-                            <p class="control">
-                                <a class="bd-button button has-text-white" id="section-color"
-                                    data-social-network="LinkedIn" data-social-action="LinkedIn"
-                                    data-social-target="https://bulma.io" target="_blank"
-                                    href="https://www.linkedin.com/in/aaron-jackson-481a2052/">
-                                    <span class="icon">
-                                        <i class="fab fa-linkedin"></i>
-                                    </span>
-                                    <span>
-                                        LinkedIn
-                                    </span>
-                                </a>
-                            </p>
-                            <!-- / LinkedIn button -->
-
-                            <!-- GitHub button -->
-                            <p class="control">
-                                <a class="bd-button button has-text-white" id="section-color"
-                                    data-social-network="GitHub" data-social-action="GitHub"
-                                    data-social-target="https://bulma.io" target="_blank"
-                                    href="https://github.com/aarontjackson">
-                                    <span class="icon">
-                                        <i class="fab fa-github white-text"></i>
-                                    </span>
-                                    <span>
-                                        GitHub
-                                    </span>
-                                </a>
-                            </p>
-                            <!-- / GitHub button -->
-
-                            <!-- Email button -->
-                            <p class="control">
-                                <a class="bd-button button has-text-white" id="section-color"
-                                    data-social-network="Email" data-social-action="GitHub"
-                                    data-social-target="https://bulma.io" target="_blank"
-                                    href="mailto:aarontjackson89@gmail.com?subject=Aaron%20Jackson%20Dev%20&body=Hi%20Aaron%2C%0A%0AI%20am%20very%20interested%20in%20connecting%20with%20you.%20Please%20contact%20me%20at%3A%0A">
-                                    <span class="icon">
-                                        <i class="far fa-envelope"></i>
-                                    </span>
-                                    <span>
-                                        Email
-                                    </span>
-                                </a>
-                            </p>
-                            <!-- / Email button -->
-
-                            <!-- <p class="control">
+                        <!-- <p class="control">
                             <a class="button has-text-white" id="section-color"
                                 href="https://github.com/jgthms/bulma/releases/download/0.8.0/bulma-0.8.0.zip">
                                 <span class="icon">
@@ -123,10 +83,10 @@
                                 <span>Download</span>
                             </a>
                         </p> -->
-                        </div>
                     </div>
-                    <!-- </div> -->
                 </div>
+                <!-- </div> -->
+            </div>
             </nav>
             <!-- / navbar -->
 
@@ -141,18 +101,14 @@
                 </div>
                 <!-- Tabs to the different portfolio sections -->
                 <div class="list">
-                        <ul id="horizontal-list">
-                            <li><a href="#about-me">About Me</a></li> | 
-                            <li><a href="#skill">Skills</a></li> |
-                            <li><a href="#projects">Projects</a></li> |
-                            <li> <a href="#contact-form">Contact Me</a></li>
-                        </ul>
-                    </div>
-                <figure class="picture"></figure>
-                    <div class="picture-shadow"></div>
-                    <img id="picutreImage" class="picture-image" srcset="" alt="Picture of Aaron Jackson" width="320"
-                        height="320">
-                </figure>
+                    <ul id="horizontal-list">
+                        <li><a href="#about-me">About Me</a></li> |
+                        <li><a href="#skill">Skills</a></li> |
+                        <li><a href="#projects">Projects</a></li> |
+                        <li><a href="#contact-form">Contact Me</a></li>
+                    </ul>
+                </div>
+
                 <!-- <div class="center">
                     <h2 id="welcome-text">Welcome!</h2>
                 </div> -->
@@ -164,6 +120,11 @@
 
     <!-- section -->
     <section class="section is-medium has-text-centered" id="section-color">
+        <figure class="picture">
+            <div class="picture-shadow"></div>
+            <img id="picutreImage" class="picture-image" srcset="" alt="Picture of Aaron Jackson" width="320"
+                height="320">
+        </figure>
         <div class="container" id="about-me">
             <div class="columns is-centered">
                 <div class="column is-10 has-text-centered">
@@ -255,7 +216,7 @@
     </section>
     <!-- =================== projects area =================================-->
     <!-- section -->
-    <section class="section has-background-white" >
+    <section class="section has-background-white">
         <div class="container" id="projects">
             <div id="project-top-padding">
                 <h1 class="center is-size-4 has-text-weight-bold" id="font-splash">Check out my recent projects.</h1>
@@ -437,7 +398,7 @@
 
     <!-- =================== contact me area =================================-->
     <!-- section -->
-    <section class="has-text-centered" >
+    <section class="has-text-centered">
         <div class="container" id="contact-form">
             <div class="columns">
                 <div class="column" id="top-padding">

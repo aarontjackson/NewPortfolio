@@ -6,7 +6,7 @@ a {
     color: currentColor;
     cursor: pointer;
     text-decoration: none;
-    padding: 0, 10px, 0, 0;
+    font-size: larger;
 }
 
 .center {
@@ -71,8 +71,17 @@ h1 .header-title {
 .list {
     display: table;
     margin: 0 auto;
-    padding: 0, 10px, 0, 0;
 }  
+
+.control a:hover {
+    opacity: 1;
+    transform: scale(1.25);
+}
+
+.control a:active {
+    opacity: 1;
+    transform: scale(1.1);
+}
 
 
 ul#horizontal-list li {
@@ -145,6 +154,13 @@ ul#horizontal-list li {
 
 #section-color {
     background-color: #788a91;
+}
+
+#header-button {
+    background-color: #788a91;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 #color-splash {
