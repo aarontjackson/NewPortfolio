@@ -85,8 +85,21 @@ h1 .header-title {
 
 .picture {
     position: relative;
-    bottom: 15px;
+    height: 100%;
+    width: 100%;
+    bottom: 20px;
+}
 
+.picture-shadow {
+    border-radius: 290486px;
+    background-image: radial-gradient(#000 0%, rgba(0, 0, 0) 70%);
+    position: absolute;
+    top: 10%;
+}
+
+.picture-image {
+    border-radius: 290486px;
+    position: relative;
 }
 
 #about-me {
