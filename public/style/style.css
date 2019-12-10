@@ -83,11 +83,31 @@ h1 .header-title {
     transform: scale(1.1);
 }
 
+.picture {
+    position: relative;
+    bottom: 15px;
+
+}
+
+#about-me {
+    padding: 0, 0, 0, 144px;
+}
+
+#about-section {
+    background-color: #788a91;
+    padding-top: 0;
+}
+
 
 ul#horizontal-list li {
-    display: inline;
-    
+    display: inline; 
 } 
+
+#horizontal-list {
+    position: relative;
+    top: 75px;
+} 
+
 
 #navbarMenuHeroB {
     position: relative;
@@ -141,7 +161,6 @@ ul#horizontal-list li {
 #header-text {
     position: relative;
     font-size: 20px;
-    bottom: 100px;
     animation: fade 1.5s;
 }
 #welcome-text {
@@ -183,6 +202,11 @@ ul#horizontal-list li {
     position: relative;
     bottom: 100px;
     z-index: 4;
+}
+
+#title-text {
+    animation: fade 2s;
+    position: relative;
 }
 
 @media all and (max-width: 1087px) { 
