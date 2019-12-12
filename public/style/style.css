@@ -13,6 +13,10 @@
     padding: 60px, 0, 0, 0;
 }
 
+.control a {
+    border: currentColor;
+} 
+
 .control a:hover {
     opacity: 1;
     transform: scale(1.25);
@@ -57,6 +61,19 @@
 .picture-image {
     border-radius: 290486px;
     position: relative;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0, 0.5, 0.25, 1.25);
+    animation-name: picImage;
+}
+
+#social a:hover {
+    opacity: 1;
+    transform: scale(1.25);
+}
+
+#social a:active {
+    opacity: 1;
+    transform: scale(1.1);
 }
 
 .wallpaper {
@@ -125,49 +142,6 @@
 #contact-submit:active {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
     transform: scale(0.98) translateY(-2px);
-}
-
-#fade {
-    z-index: 1;
-}
-
-#fade:hover {
-    opacity: 0.09;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    padding: 2px 0px;
-    color: #fff;
-    background: #000000;
-    text-decoration: none;
-    text-align: center;
-    -webkit-transition: opacity 500ms;
-    -moz-transition: opacity 500ms;
-    -o-transition: opacity 500ms;
-    transition: opacity 500ms;
-}
-
-@keyframes fade {
-    0% {
-      opacity: 0;
-    }
-
-    25% {
-        opacity: 0.25;
-    }
-
-    50% {
-        opacity: 0.5;
-    }
-  
-    75% {
-      opacity: 0.75;
-    }
-  
-    100% {
-      opacity: 1;
-    }
 }
 
 #font-splash {
@@ -296,7 +270,72 @@ ul#horizontal-list li {
     .field.is-grouped {justify-content: center;}
 }
 
+/* ==================== Animations ======================== */
 
+@keyframes bounceIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#fade {
+    z-index: 1;
+}
+
+#fade:hover {
+    opacity: 0.09;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 2px 0px;
+    color: #fff;
+    background: #000000;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+
+@keyframes fade {
+    0% {
+      opacity: 0;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+  
+    75% {
+      opacity: 0.75;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes picImage {
+    from {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
 
 
 
