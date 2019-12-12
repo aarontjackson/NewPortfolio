@@ -20,7 +20,7 @@
 
 .control a:active {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(0.99) translateY(-2px);
 }
 
 .fade-link {
@@ -75,8 +75,6 @@
     position: absolute;
 }
 
-
-
 .wrapper {
     position: relative;
     overflow: hidden;
@@ -105,6 +103,28 @@
 
 #contact-submit {
     background-color: #3500d3;
+    border-radius: 290486px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    color: #fff;
+    display: inline-block;
+    font-size: 0.875rem;
+    padding: 5px 3em;
+    text-shadow: none;
+    transition-property: box-shadow, transform;
+    user-select: none;
+    vertical-align: top;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+}
+
+#contact-submit:hover {
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    transform: scale(1.02) translateY(-4px);
+}
+
+#contact-submit:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    transform: scale(0.98) translateY(-2px);
 }
 
 #fade {
@@ -228,6 +248,8 @@ ul#horizontal-list li {
     animation: fade 2s;
     position: relative;
     top: 20px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
 }
 
 #top-padding {
