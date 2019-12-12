@@ -210,17 +210,22 @@ ul#horizontal-list li {
 
 @media all and (min-width: 1472px) and (max-width: 1920px) { 
     #column-padding {padding-bottom: 76px;}
-    
+}
+@media all and (min-width: 1037px) and (max-width: 1279px) { 
+    #column-padding {padding-bottom: 124px;}
+}
+@media all and (min-width: 1025px) and (max-width: 1036px) { 
+    #column-padding {padding-bottom: 148px;}
+}
+@media all and (max-width: 1010px) { 
+    #column-padding {padding-bottom: 124px;}
 }
 @media all and (max-width: 1087px) { 
     .field.is-grouped {justify-content: center;}
-    
+   
 }
-@media all and (min-width: 877px) and (max-width: 1024px) { 
+@media all and (min-width: 1011px) and (max-width: 1024px) { 
     #column-padding {padding-bottom: 148px;}
-}
-@media all and (min-width: 809px) and (max-width: 876px) { 
-    #column-padding {padding-bottom: 100px;}
 }
 @media all and (max-width: 377px) { 
     #horizontal-list {font-size: small;} 
