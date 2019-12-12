@@ -210,12 +210,14 @@ ul#horizontal-list li {
 
 @media all and (min-width: 1472px) and (max-width: 1920px) { 
     #column-padding {padding-bottom: 76px;}
-   
+    
+}
+@media all and (max-width: 1087px) { 
+    .field.is-grouped {justify-content: center;}
     
 }
 @media all and (min-width: 877px) and (max-width: 1024px) { 
     #column-padding {padding-bottom: 148px;}
-    
 }
 @media all and (min-width: 809px) and (max-width: 876px) { 
     #column-padding {padding-bottom: 100px;}
@@ -224,7 +226,8 @@ ul#horizontal-list li {
 #skill {
     position: relative;
     bottom: 100px;
-    z-index: 4;
+    order: 2;
+    flex-shrink: 0;
 }
 
 #title-text {
