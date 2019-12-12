@@ -2,12 +2,12 @@
     box-sizing: border-box;
 }
 
-a {
+#horizontal-list a {
     color: currentColor;
     cursor: pointer;
     text-decoration: none;
     font-size: larger;
-}
+} 
 
 .center {
     display: flex;
@@ -122,7 +122,7 @@ ul#horizontal-list li {
 
 #horizontal-list {
     position: relative;
-    top: 75px;
+    top: 100px;
 } 
 
 
@@ -222,6 +222,9 @@ ul#horizontal-list li {
 @media all and (min-width: 809px) and (max-width: 876px) { 
     #column-padding {padding-bottom: 100px;}
 }
+@media all and (max-width: 377px) { 
+    #horizontal-list {font-size: small;} 
+} 
 
 #skill {
     position: relative;
