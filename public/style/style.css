@@ -203,6 +203,13 @@ ul#horizontal-list li {
     float: left;
 }
 
+#log {
+    text-align: center;
+    color: #3500d3;
+    font-size: large;
+    font-weight: bolder;
+}
+
 #navbarMenuHeroB {
     position: relative;
     top: 20%;
