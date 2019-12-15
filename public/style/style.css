@@ -55,6 +55,7 @@
     position: relative;
     height: 100%;
     width: 100%;
+    padding: 20px 0;
 }
 
 .picture-shadow {
@@ -69,7 +70,7 @@
     position: relative;
     animation-duration: 1s;
     animation-timing-function: cubic-bezier(0, 0.5, 0.25, 1.25);
-    animation-name: picImage;
+   
 }
 
 #social a:hover {
