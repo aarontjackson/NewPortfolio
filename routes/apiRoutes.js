@@ -2,13 +2,13 @@ const db = require("../models");
 
 module.exports = function (app) {
 
-    app.get("/", function (req, res) {
+    app.get("/submit", function (req, res) {
         db.Contact.findAll({}).then(function (Contact) {
             res.json(Contact);
         });
     });
 
-    app.post("/", function (req, res) {
+    app.post("/submit", function (req, res) {
         console.log(req.body);
         db.Contact.create({
             name: req.body.name,

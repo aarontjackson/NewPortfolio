@@ -77,7 +77,7 @@ $('#contact-submit').on('click', function (event) {
 
   console.log(newContact);
 
-  $.post("/api/contact", newContact)
+  $.post("/submit", newContact)
 
     .then(function () {
       let row = $("<div>");
