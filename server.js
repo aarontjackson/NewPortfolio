@@ -16,7 +16,7 @@ const db = require("./models");
 // });
 
 const app = express();
-let PORT = process.env.PORT || 3000;
+let PORT = process.env.PORT || 8000;
 
 // Middleware
 app.use(express.urlencoded({ extended: false }));
